@@ -23,11 +23,11 @@ export default function Navbar() {
       <ul className="hidden md:flex items-center gap-8 list-none">
         <li><a href="#products" className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">Products</a></li>
         <li><a href="#how" className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">Integration</a></li>
-        <li><a href="#" className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">API Docs</a></li>
-        <li><a href="#" className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">About</a></li>
+        <li><a href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/scoring`} className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">Scoring</a></li>
+        <li><a href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/login`} className="font-['Google_Sans',sans-serif] text-[15px] font-bold text-g4 transition-colors duration-200 hover:text-g7">Sign In</a></li>
         <li>
           <ButtonAnimatedBorderDemo asChild>
-            <a href="#">Request Access</a>
+            <a href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/register`} className="font-bold">Get Started</a>
           </ButtonAnimatedBorderDemo>
         </li>
       </ul>

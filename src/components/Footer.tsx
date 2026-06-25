@@ -17,7 +17,7 @@ export default function Footer() {
       <ul className="flex flex-wrap gap-4 lg:gap-[32px] list-none">
         <li><a href="#" className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">Privacy</a></li>
         <li><a href="#" className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">Terms</a></li>
-        <li><a href="#" className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">API Docs</a></li>
+        <li><a href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/scoring`} className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">Scoring</a></li>
         <li><a href="#" className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">Careers</a></li>
         <li><a href="#" className="font-['Google_Sans',sans-serif] text-[11px] text-g4 no-underline uppercase font-bold transition-colors duration-200 hover:text-g6">Security</a></li>
       </ul>

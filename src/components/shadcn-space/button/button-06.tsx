@@ -24,7 +24,7 @@ const ButtonAnimatedBorderDemo = ({
       <Button
         variant="ghost"
         asChild={asChild}
-        className={`relative z-10 m-[1px] rounded-md bg-black text-white hover:bg-g2 hover:text-white shadow-none cursor-pointer ${className}`}
+        className={`relative z-10 m-[1px] rounded-md bg-black text-white hover:!bg-black hover:!text-white shadow-none cursor-pointer ${className}`}
         {...props}
       >
         {asChild ? (

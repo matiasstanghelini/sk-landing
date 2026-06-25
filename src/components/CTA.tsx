@@ -24,8 +24,7 @@ export default function CTA() {
           </p>
 
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-center gap-[10px] md:gap-[16px] w-full md:w-auto">
-            <CustomButton href="#" variant="primary" className="2xl:text-[18px] 2xl:px-10 2xl:py-5">Request Access</CustomButton>
-            <CustomButton href="#" variant="secondary" className="2xl:text-[18px] 2xl:px-10 2xl:py-5">Schedule a Demo</CustomButton>
+            <CustomButton href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/register`} variant="primary" className="2xl:text-[16px]">Get Started</CustomButton>
           </div>
         </div>
       </div>
