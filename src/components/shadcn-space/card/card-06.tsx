@@ -6,10 +6,10 @@ import React from 'react';
 export interface StatItem {
     title: string;
     subtitle: string;
-    cardIcon: React.ElementType;
+    cardIcon: React.ComponentType<{ className?: string }>;
     badgeColor: string;
     statusValue: string;
-    statusIcon: React.ElementType;
+    statusIcon: React.ComponentType<{ className?: string }>;
 }
 
 const StatisticsCard = ({ items }: { items: StatItem[] }) => {
