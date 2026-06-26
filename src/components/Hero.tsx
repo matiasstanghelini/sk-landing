@@ -2,6 +2,8 @@ import CustomButton from '@/components/ui/CustomButton';
 import OutlineBadgeDemo from '@/components/shadcn-space/badge/badge-03';
 import Beams from '@/components/Beams';
 
+import TextType from '@/components/TextType';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen px-5 md:px-[28px] lg:px-[60px] bg-black flex flex-col items-center overflow-hidden">
@@ -29,8 +31,20 @@ export default function Hero() {
           <h1 className="text-[30px] md:text-[44px] lg:text-[56px] 2xl:text-[88px] font-light leading-[1.2] md:leading-[1.1] mb-4 md:mb-[24px] 2xl:mb-[40px] text-white tracking-tight">
             Capital moves<br />
             <strong className="font-medium block">when you decide.</strong>
-            <span className="text-g5 font-light relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 2xl:after:-bottom-3 after:w-full after:h-px 2xl:after:h-[2px] after:bg-g4">
-              Built for enterprise.
+            <span className="text-g5 font-light inline-flex items-center gap-3">
+              <span>Built for</span>
+              <TextType
+                text={['enterprise', 'banks', 'fintechs', 'suppliers']}
+                typingSpeed={75}
+                pauseDuration={2000}
+                showCursor
+                cursorCharacter="_"
+                deletingSpeed={20}
+                variableSpeedEnabled={false}
+                variableSpeedMin={60}
+                variableSpeedMax={120}
+                cursorBlinkDuration={0.5}
+              />
             </span>
           </h1>
 
