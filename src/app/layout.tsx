@@ -22,6 +22,15 @@ export const metadata: Metadata = {
     title: "SK — Credit Infrastructure",
     description: "AI-native credit infrastructure for corporate Latin America.",
   },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: ['/icon.svg'],
+    apple: [
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ],
+  },
 };
 
 export default function RootLayout({
