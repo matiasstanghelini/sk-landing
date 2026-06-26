@@ -1,10 +1,22 @@
 import CustomButton from '@/components/ui/CustomButton';
 import OutlineBadgeDemo from '@/components/shadcn-space/badge/badge-03';
+import Beams from '@/components/Beams';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen px-5 md:px-[28px] lg:px-[60px] bg-black flex flex-col items-center">
-      <div className="w-full max-w-[900px] 2xl:max-w-[1280px] flex flex-col items-center text-center my-auto pt-[100px] pb-[60px]">
+    <section className="relative min-h-screen px-5 md:px-[28px] lg:px-[60px] bg-black flex flex-col items-center overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-40">
+        <Beams
+          beamWidth={3}
+          beamHeight={30}
+          beamNumber={20}
+          speed={3}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={30}
+        />
+      </div>
+      <div className="relative z-10 w-full max-w-[900px] 2xl:max-w-[1280px] flex flex-col items-center text-center my-auto pt-[100px] pb-[60px]">
         {/* Top Content Group */}
         <div className="flex flex-col items-center w-full">
           {/* Premium Glowing Badge */}
